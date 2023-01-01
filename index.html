@@ -117,7 +117,42 @@ Sub-Head:    #878786
       .stack2_column_center {display: block !important; width: 100% !important; max-width: 100% !important; direction: ltr !important;}
       .stack_column {display: block !important; width: 100% !important; max-width: 100% !important; direction: ltr !important;}
       table.center-on-narrow {display: inline-block !important;}
-      }    
+      .item-details {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        border-top: 1px solid #001480;
+        padding: 20px 5px;
+        gap: 10px;
+      }
+      .item-details .item-image {
+        flex: 1;
+        height: 100%;
+      }
+      .item-details .item-image img {
+        object-fit: contain;
+        max-width: 100%;
+        max-height: 100%;
+      }
+      .item-details .item-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        text-align: left;
+        flex: 2;
+      }
+      .item-details .item-content .item-description {
+        font-family: 'Open Sans', Arial, sans-serif; 
+        font-size: 16px; 
+        line-height: 120%;
+        text-transform: uppercase;
+        font-weight: bolder;
+        color: #333333;
+      }
+      .item-details .item-content .item-button {
+        width: fit-content;
+      }
     </style>
     <!--[if (gte mso 9)|(IE)]>
 <style type="text/css">
@@ -671,14 +706,14 @@ table {border-collapse:collapse !important;}
                                   <tbody>
                                     <tr>
                                       <!-- DESKTOP HERO IMG -->
-                                      <td style="font-size: 0px; line-height: 0px; width: 600px;" width="600" bgcolor="#022356"><a href="https://www.napaonline.com/en/offers/bucket?cid=EMAIL-2021_0701_BUCKET_EVENT-HERO_IMG&amp;utm_medium=EMAIL&amp;utm_campaign=2021_0701_BUCKET_EVENT&amp;utm_source=HERO_IMG" reportname="HERO_IMG" target="_blank" style="display: block;"><img class="mobile_hide" style="display: block; border: 0px; padding: 0px; margin: 0px; width: 100%; height: auto; max-width: 600px;" alt="NAPA BUCKET GET 20% OFF 3 OR MORE ITEMS" src="C:\Users\Verticurl-User\Downloads\Training Templates\Training Templates\Battery.jpg" width="600" height="289" border="0"></a> 
+                                      <td style="font-size: 0px; line-height: 0px; width: 600px;" width="600" bgcolor="#022356"><a href="https://www.napaonline.com/en/offers/bucket?cid=EMAIL-2021_0701_BUCKET_EVENT-HERO_IMG&amp;utm_medium=EMAIL&amp;utm_campaign=2021_0701_BUCKET_EVENT&amp;utm_source=HERO_IMG" reportname="HERO_IMG" target="_blank" style="display: block;"><img class="mobile_hide" style="display: block; border: 0px; padding: 0px; margin: 0px; width: 100%; height: auto; max-width: 600px;" alt="NAPA BUCKET GET 20% OFF 3 OR MORE ITEMS" src="./assets/img/07_Hero_Standard.jpg" width="600" height="289" border="0"></a> 
                                         <!-- Mobile Only hero image image -->
                                         <!--[if !mso]><!-->
                                         <div class="mobile_show" style="display: none; margin: 0; padding: 0; width: 0px; max-height: 0px; overflow: hidden; font-size: 0; line-height: 0;">
                                           <table width="100%" cellspacing="0" cellpadding="0" border="0">
                                             <tbody>
                                               <tr>
-                                                <td align="center"><a href="https://www.napaonline.com/en/offers/bucket?cid=EMAIL-2021_0701_BUCKET_EVENT-HERO_IMG&amp;utm_medium=EMAIL&amp;utm_campaign=2021_0701_BUCKET_EVENT&amp;utm_source=HERO_IMG" reportname="HERO_IMG" target="_blank" style="display: block; color: #ffffff; font-family: Helvetica, serif; font-size: 24px;"><img alt="NAPA BUCKET GET 20% OFF 3 OR MORE ITEMS" class="mobile_retina" src="http://res1.ca.napaautoparts.com/res/napaautoparts_mkt_prod1/51f0d8dd4d92b4f7dd27c4e587619d5e142527b9d4ce72d39eec23e0eb750e3d.jpg" style="display: inline-block; border: none; width: 100%; max-width: 639px; height: auto;" width="100%"></a></td>
+                                                <td align="center"><a href="https://www.napaonline.com/en/offers/bucket?cid=EMAIL-2021_0701_BUCKET_EVENT-HERO_IMG&amp;utm_medium=EMAIL&amp;utm_campaign=2021_0701_BUCKET_EVENT&amp;utm_source=HERO_IMG" reportname="HERO_IMG" target="_blank" style="display: block; color: #ffffff; font-family: Helvetica, serif; font-size: 24px;"><img alt="NAPA BUCKET GET 20% OFF 3 OR MORE ITEMS" class="mobile_retina" src="./assets/img/07_Hero_Standard.jpg" style="display: inline-block; border: none; width: 100%; max-width: 639px; height: auto;" width="100%"></a></td>
                                               </tr>
                                             </tbody>
                                           </table>
@@ -713,13 +748,13 @@ table {border-collapse:collapse !important;}
                                         <table style="max-width: 600px;" width="100%" cellspacing="0" cellpadding="0" border="0">
                                           <tbody>
                                             <tr>
-                                              <td class="mobile_header_text" style="font-family: 'Oswald', Arial, sans-serif; font-size: 37px; line-height: 42px; color: #333333; font-weight: 600; text-transform: uppercase; padding: 0 10px;" valign="top" align="center">THE BUCKET IS BACK</td>
-                                            </tr>
-                                            <tr>
                                               <td style="font-size: 20px; line-height: 20px;" valign="top" height="20"></td>
                                             </tr>
                                             <tr>
-                                              <td class="mobi_hero_desc" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 20px; font-weight: normal; line-height: 26px; color: #868889; padding: 0px;" valign="top" align="center">Get 20% off 3+ items with the $2.99 NAPA Bucket. That’s right, save on wipers, headlights, jumper cables, brake pads, anti-freeze, motor oil, air fresheners and more.</td>
+                                              <td class="mobi_hero_desc" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 20px; font-weight: normal; line-height: 26px; color: #868889; padding: 0px;" valign="top" align="center">
+                                                2021 marks our 10th year partnering with the Intrepid Fallen Heroes Fund (IFHF) to drive awareness and support for our nation's service members.
+                                                Purchase the products below to help support the cause.
+                                              </td>
                                             </tr>
                                             <tr>
                                               <td style="font-size: 20px; line-height: 20px;" valign="top" height="20"></td>
@@ -731,15 +766,51 @@ table {border-collapse:collapse !important;}
                                                 <table role="presentation" style="border-collapse: separate; line-height: 100%;" cellspacing="0" cellpadding="0" border="0" align="center">
                                                   <tbody>
                                                     <tr>
-                                                      <td class="samsung_button" role="presentation" style="border: none; border-radius: 0px; cursor: auto; padding: 10px 50px; background: #FFC72C;" valign="middle" bgcolor="#FFC72C" align="center"><a href="https://www.napaonline.com/en/offers/bucket?cid=EMAIL-2021_0701_BUCKET_EVENT-HERO_CTA&amp;utm_medium=EMAIL&amp;utm_campaign=2021_0701_BUCKET_EVENT&amp;utm_source=HERO_CTA" reportname="HERO_CTA" target="_blank" style="background: #FFC72C; color: #001480; font-family: 'Open Sans', Arial, sans-serif; font-size: 16px; line-height: 120%; margin: 0; text-decoration: none; text-transform: none;"><b>BUCKET SAVINGS</b></a></td>
+                                                      <td class="samsung_button" role="presentation" style="border: none; border-radius: 0px; cursor: auto; padding: 10px 50px; background: #FFC72C;" valign="middle" bgcolor="#FFC72C" align="center"><a href="https://www.napaonline.com/en/offers/bucket?cid=EMAIL-2021_0701_BUCKET_EVENT-HERO_CTA&amp;utm_medium=EMAIL&amp;utm_campaign=2021_0701_BUCKET_EVENT&amp;utm_source=HERO_CTA" reportname="HERO_CTA" target="_blank" style="background: #FFC72C; color: #001480; font-family: 'Open Sans', Arial, sans-serif; font-size: 16px; line-height: 120%; margin: 0; text-decoration: none; text-transform: none;"><b>START SHOPPING NOW</b></a></td>
                                                     </tr>
                                                   </tbody>
                                                 </table>
                                               </td>
                                             </tr>
-                                            <!--=== /CTA BUTTON ===-->
                                             <tr>
-                                              <td style="font-size: 30px; line-height: 30px;" valign="top" height="30"></td>
+                                              <td style="font-size: 30px; line-height: 30px;" valign="top" height="30">
+                                            </tr>
+                                            <tr>
+                                              <td style="font-size: 30px; line-height: 30px;" valign="top">
+                                                <div class="item-details">
+                                                  <div class="item-image">
+                                                    <img src="assets/img/Hat_Bundle.png" alt="Hat Bundle" />
+                                                  </div>
+                                                  <div class="item-content">
+                                                    <div class="item-description">Free Hat with $25 purchase and a $1 donation at your local NAPA</div>
+                                                    <div class="item-button">
+                                                      <div class="samsung_button" role="presentation" style="border: none; border-radius: 0px; cursor: auto; padding: 10px 50px; background: #FFC72C;" valign="middle" bgcolor="#FFC72C" align="center"><a href="https://www.napaonline.com/en/offers/bucket?cid=EMAIL-2021_0701_BUCKET_EVENT-HERO_CTA&amp;utm_medium=EMAIL&amp;utm_campaign=2021_0701_BUCKET_EVENT&amp;utm_source=HERO_CTA" reportname="HERO_CTA" target="_blank" style="background: #FFC72C; color: #001480; font-family: 'Open Sans', Arial, sans-serif; font-size: 16px; line-height: 120%; margin: 0; text-decoration: none; text-transform: none;"><b>BUY NOW</b></a></div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                                <div class="item-details">
+                                                  <div class="item-image">
+                                                    <img src="assets/img/CRC_Bundle.jpg" alt="Hat Bundle" />
+                                                  </div>
+                                                  <div class="item-content">
+                                                    <div class="item-description">Your choice of 2 for $7 10 ¢ donated to IFHF</div>
+                                                    <div class="item-button">
+                                                      <div class="samsung_button" role="presentation" style="border: none; border-radius: 0px; cursor: auto; padding: 10px 50px; background: #FFC72C;" valign="middle" bgcolor="#FFC72C" align="center"><a href="https://www.napaonline.com/en/offers/bucket?cid=EMAIL-2021_0701_BUCKET_EVENT-HERO_CTA&amp;utm_medium=EMAIL&amp;utm_campaign=2021_0701_BUCKET_EVENT&amp;utm_source=HERO_CTA" reportname="HERO_CTA" target="_blank" style="background: #FFC72C; color: #001480; font-family: 'Open Sans', Arial, sans-serif; font-size: 16px; line-height: 120%; margin: 0; text-decoration: none; text-transform: none;"><b>BUY NOW</b></a></div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                                <div class="item-details">
+                                                  <div class="item-image">
+                                                    <img src="assets/img/Craftsman_Bundle.jpg" alt="Hat Bundle" />
+                                                  </div>
+                                                  <div class="item-content">
+                                                    <div class="item-description">Portion of proceeds from craftman tools goes back to the IFHF</div>
+                                                    <div class="item-button">
+                                                      <div class="samsung_button" role="presentation" style="border: none; border-radius: 0px; cursor: auto; padding: 10px 50px; background: #FFC72C;" valign="middle" bgcolor="#FFC72C" align="center"><a href="https://www.napaonline.com/en/offers/bucket?cid=EMAIL-2021_0701_BUCKET_EVENT-HERO_CTA&amp;utm_medium=EMAIL&amp;utm_campaign=2021_0701_BUCKET_EVENT&amp;utm_source=HERO_CTA" reportname="HERO_CTA" target="_blank" style="background: #FFC72C; color: #001480; font-family: 'Open Sans', Arial, sans-serif; font-size: 16px; line-height: 120%; margin: 0; text-decoration: none; text-transform: none;"><b>BUY NOW</b></a></div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </td>
                                             </tr>
                                           </tbody>
                                         </table>
@@ -771,28 +842,6 @@ table {border-collapse:collapse !important;}
                             </tr>
                           </tbody>
                         </table>
-                        <!-- /SPACER -->
-                        <!-- SMS  -->
-                        <table class="one_column" style="border-spacing:0;max-width:640px;" width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#022356">
-                          <tbody>
-                            <tr>
-                              <td class="gutter_1" style="width:20px;" width="20"></td>
-                              <td>
-                                <table class="one_column" style="border-spacing:0;max-width:640px;" width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#022356">
-                                  <tbody>
-                                    <tr>
-                                      <!-- DESKTOP HERO IMG -->
-                                      <td class="mobile_hide" style="font-size:0px;line-height:0px;width:600px;" width="600"><a href="https://www.napaonline.com/sms-program?cid=EMAIL-2021_0701_BUCKET_EVENT-SMS_IMG&amp;utm_medium=EMAIL&amp;utm_campaign=2021_0701_BUCKET_EVENT&amp;utm_source=SMS_IMG" reportname="SMS_IMG" style="border:none;outline:none;" target="_blank"><img alt="Text NAPA to 24002 or sign up online for exclusive offers sent straight to your phone." src="http://napaautoparts-mkt-prod1-res.adobe-campaign.com/res/napaautoparts_mkt_prod1/8c7485ae451a899f25496e1148d71076.jpg" style="display:block;border:0px;padding:0px;margin:0px;width:100%;max-width:600px;font-family:Verdana, sans-serif;font-size:12px;color:#0090c5;" title="Text NAPA to 24002 or sign up online for exclusive offers sent straight to your phone." width="600"></a></td>
-                                      <!-- MOBILE HERO IMG -->
-                                      <td class="mobile_show" style="font-size:0px;line-height:0px;display:none;width:0px;" width="100%" bgcolor="#022356" align="center"><a href="https://www.napaonline.com/sms-program?cid=EMAIL-2021_0701_BUCKET_EVENT-SMS_IMG&amp;utm_medium=EMAIL&amp;utm_campaign=2021_0701_BUCKET_EVENT&amp;utm_source=SMS_IMG" reportname="SMS_IMG" style="border:none;outline:none;" target="_blank"><img class="mobile_retina" src="http://napaautoparts-mkt-prod1-res.adobe-campaign.com/res/napaautoparts_mkt_prod1/1f07ea1ba1c8fb27f2565fc72063764d.jpg" alt="Text NAPA to 24002 or sign up online for exclusive offers sent straight to your phone." style="display:block;border:0px;padding:0px;margin:0px;max-height:0;width:0;" width="280"></a></td>
-                                    </tr>
-                                  </tbody>
-                                </table>
-                              </td>
-                              <td class="gutter_1" style="width:20px;" width="20"></td>
-                            </tr>
-                          </tbody>
-                        </table>
                         <!-- /SMS -->
                         <!-- SPACER -->
                         <table class="one_column" style="border-spacing:0;max-width:640px;" width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#022356">
@@ -812,6 +861,7 @@ table {border-collapse:collapse !important;}
                             </tr>
                           </tbody>
                         </table>
+                        
                         <!-- /SPACER -->
                         <!-- CONNECT -->
                           <table class="one_column" style="border-spacing:0;max-width:640px;" width="100%" cellspacing="0" cellpadding="0" border="0">
@@ -975,13 +1025,17 @@ table {border-collapse:collapse !important;}
                                   <table width="100%" cellspacing="0" cellpadding="0" border="0">
                                     <tbody>
                                       <tr>
-                                        <td style="font-family:'Open Sans', Arial, sans-serif;font-size:11px;line-height:16px;color:#ffffff;" data-nl-format="datetime" valign="top" align="left">At participating NAPA AUTO PART STORES and NAPAOnline.com. Exclusions apply. May not be combined with other offers. Offer valid  07/01/21 - 07/31/21.</td>
+                                        <td style="font-family:'Open Sans', Arial, sans-serif;font-size:11px;line-height:16px;color:#ffffff;" data-nl-format="datetime" valign="top" align="left">
+                                          While Supplies last. Some products may not be available in all areas. Only at participationg locations. See Store for details. Offers end 7/31/21.
+                                        </td>
                                       </tr>
                                       <tr>
                                         <td style="font-size:10px;line-height:10px;" width="600" valign="top" height="10"></td>
                                       </tr>
                                       <tr>
-                                        <td style="font-family:'Open Sans', Arial, sans-serif;font-size:11px;line-height:16px;color:#ffffff;" data-nl-format="datetime" valign="top" align="left">By texting NAPA to 24002, you authorize NAPA to send promotional text messages to the phone number provided. Message frequency varies, msg&data rates may apply, text STOP to 24002 to opt-out, text HELP to 24002 for help. Consent not required and is not a condition of purchase. Carriers not responsible for undelivered messages. Link to full terms and privacy policy. <a href="https://napaonline.com/en/sms-terms-conditions?cid=EMAIL-2021_0701_BUCKET_EVENT-SMS_TC_LINK&amp;utm_medium=EMAIL&amp;utm_campaign=2021_0701_BUCKET_EVENT&amp;utm_source=SMS_TC_LINK" target="_blank" style="color:#ffffff;text-decoration:none;">https://napaonline.com/en/sms-terms-conditions</a>.</td>
+                                        <td style="font-family:'Open Sans', Arial, sans-serif;font-size:11px;line-height:16px;color:#ffffff;" data-nl-format="datetime" valign="top" align="left">
+                                          Please do not reply to this message. Replies to this message are routed to an unmonitored mail box. If you have questions please go to 
+                                          <a href="https://napaonline.com/en/sms-terms-conditions?cid=EMAIL-2021_0701_BUCKET_EVENT-SMS_TC_LINK&amp;utm_medium=EMAIL&amp;utm_campaign=2021_0701_BUCKET_EVENT&amp;utm_source=SMS_TC_LINK" target="_blank" style="color:#ffffff;text-decoration:none;">https://napaonline.com/en/contact-us</a>.</td>
                                       </tr>
                                       <tr>
                                         <td style="font-size:10px;line-height:10px;" width="600" valign="top" height="10"></td>
@@ -1005,9 +1059,6 @@ table {border-collapse:collapse !important;}
                                       <!--tr>
 <td height="10" style="font-size:10px; line-height:10px;"></td>
 </tr-->
-                                      <tr>
-                                        <td style="font-family:'Open Sans', Arial, sans-serif;font-size:11px;line-height:16px;color:#ffffff;" valign="top" align="left">Please do not reply to this message. Replies to this message are routed to an unmonitored mailbox. If you have questions please go to <a href="https://www.napaonline.com/en/contact-us?cid=EMAIL-2021_0701_BUCKET_EVENT-CONTACT-US_LINK&amp;utm_medium=EMAIL&amp;utm_campaign=2021_0701_BUCKET_EVENT&amp;utm_source=CONTACT-US_LINK" style="color:#ffffff;text-decoration:none;">https://www.napaonline.com/en/contact-us</a>.</td>
-                                      </tr>
                                       <tr>
                                         <td style="font-size:10px;line-height:10px;" height="10"></td>
                                       </tr>
